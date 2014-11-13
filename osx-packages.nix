@@ -5,5 +5,5 @@ with import <nixpkgs> {}; [
   pkgconfig
   todo-txt-cli
   vim
-  git
+  gitFull
 ]
