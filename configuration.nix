@@ -80,6 +80,11 @@
     gnupg
     (pinentry.override { useGtk = false; })
     git
+    autoconf automake libtool gettext
+    gnumake
+    gcc
+    pkgconfig
+    boehmgc
   ];
 
   programs.bash.enableCompletion = true;
@@ -99,4 +104,6 @@
   time.timeZone = "America/New_York";
 
   environment.etc."nixos/configuration.nix".source = "/home/shlevy/dotfiles/configuration.nix";
+
+  environment.pathsToLink = [ "/share/aclocal" ];
 }
