@@ -85,6 +85,7 @@
     gcc
     pkgconfig
     boehmgc
+    nix-exec
   ];
 
   programs.bash.enableCompletion = true;
