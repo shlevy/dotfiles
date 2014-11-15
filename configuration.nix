@@ -86,6 +86,10 @@
     pkgconfig
     boehmgc
     nix-exec
+    posix_man_pages
+    manpages
+    bvi
+    patchelf
   ];
 
   programs.bash.enableCompletion = true;
