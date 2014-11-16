@@ -71,8 +71,9 @@
     readOnlyStore = true;
     trustedBinaryCaches = [ "http://hydra.nixos.org" ];
     package = pkgs.nixUnstable;
-    envVars.TMPDIR = "/nix/tmp";
   };
+
+  systemd.services.nix-daemon.environment.TMPDIR = "/nix/tmp";
 
   environment.systemPackages = with pkgs; [
     vim
