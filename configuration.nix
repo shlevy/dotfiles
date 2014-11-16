@@ -92,6 +92,7 @@
     manpages
     bvi
     patchelf
+    nixops
   ];
 
   programs.bash.enableCompletion = true;
