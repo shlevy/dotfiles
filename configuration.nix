@@ -93,7 +93,9 @@
     bvi
     patchelf
     nixops
-    (haskellPackages.ghcWithPackages (self: []))
+    (haskellPackages.ghcWithPackages (self: with self; [
+      parsec
+    ]))
   ];
 
   programs.bash.enableCompletion = true;
