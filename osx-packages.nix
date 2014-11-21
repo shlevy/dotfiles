@@ -7,4 +7,6 @@ with import <nixpkgs> {}; [
   todo-txt-cli
   vim
   gitFull
+  (pass.override { gnupg = gnupg21; })
+  gnupg21
 ]
