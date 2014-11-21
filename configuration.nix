@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
+  boot.kernelModules = [ "kvm-intel" ];
+
   boot.loader.grub = {
     enable = true;
 
@@ -92,6 +94,7 @@
     manpages
     bvi
     patchelf
+    gdb
     nixops
     (haskellPackages.ghcWithPackages (self: with self; [
       parsec
